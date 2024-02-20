@@ -11,7 +11,7 @@ Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamen
 Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
 
 Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
-Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
+Usa container > row > col-2-* in questo ordine per ottenere un layout responsive perfetto.
 
 Esercizi:
 
@@ -161,6 +161,7 @@ EXTRAS
         <div class="col-6 col-sm-4 col-md-3">
           <div class="card border-info border border-2">
             <img
+              style="object-fit: cover"
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/hp/box-with-logo/400x600_hp_prezzi_leggeri.jpg/jcr:content.jpg"
               class="card-img-top"
               alt="..."
@@ -175,6 +176,7 @@ EXTRAS
         <div class="col-6 col-sm-4 col-md-3">
           <div class="card border-info border border-2">
             <img
+              style="object-fit: cover"
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/hp/box-with-logo/400x600-offerte-last-minute.png/jcr:content.png"
               class="card-img-top"
               alt="..."
@@ -189,6 +191,7 @@ EXTRAS
         <div class="col-6 col-sm-4 col-md-3">
           <div class="card border-info border border-2">
             <img
+              style="object-fit: cover"
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/hp/box-with-logo/400x600_hp_voli_e_hotel_selezionati.jpg/jcr:content.jpg"
               class="card-img-top"
               alt="..."
@@ -203,6 +206,7 @@ EXTRAS
         <div class="col-6 col-sm-4 col-md-3">
           <div class="card border-info border border-2">
             <img
+              style="object-fit: cover"
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/img/metodi-di-pagamento/scalapay/eden_scalapay_400_600.jpg/jcr:content.jpg"
               class="card-img-top"
               alt="..."
@@ -224,7 +228,7 @@ EXTRAS
           <div class="card border-info border border-2">
             <img
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/hp/box-with-logo/400x600_hp_prezzi_leggeri.jpg/jcr:content.jpg"
-              class="card-img-top"
+              class="card-img-top shadow-lg"
               alt="..."
             />
             <div class="card-body">
@@ -238,7 +242,7 @@ EXTRAS
           <div class="card border-info border border-2">
             <img
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/hp/box-with-logo/400x600-offerte-last-minute.png/jcr:content.png"
-              class="card-img-top"
+              class="card-img-top shadow-lg"
               alt="..."
             />
             <div class="card-body">
@@ -252,7 +256,7 @@ EXTRAS
           <div class="card border-info border border-2">
             <img
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/hp/box-with-logo/400x600_hp_voli_e_hotel_selezionati.jpg/jcr:content.jpg"
-              class="card-img-top"
+              class="card-img-top shadow-lg"
               alt="..."
             />
             <div class="card-body">
@@ -266,7 +270,7 @@ EXTRAS
           <div class="card border-info border border-2">
             <img
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/img/metodi-di-pagamento/scalapay/eden_scalapay_400_600.jpg/jcr:content.jpg"
-              class="card-img-top"
+              class="card-img-top shadow-lg"
               alt="..."
             />
             <div class="card-body">
@@ -280,7 +284,7 @@ EXTRAS
           <div class="card border-info border border-2">
             <img
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/img/metodi-di-pagamento/scalapay/eden_scalapay_400_600.jpg/jcr:content.jpg"
-              class="card-img-top"
+              class="card-img-top shadow-lg"
               alt="..."
             />
             <div class="card-body">
@@ -294,7 +298,7 @@ EXTRAS
           <div class="card border-info border border-2">
             <img
               src="https://static.edenviaggi.it/.imaging/default/dam/edenviaggi.it/img/metodi-di-pagamento/scalapay/eden_scalapay_400_600.jpg/jcr:content.jpg"
-              class="card-img-top"
+              class="card-img-top shadow-lg"
               alt="..."
             />
             <div class="card-body">
@@ -306,6 +310,114 @@ EXTRAS
         </div>
       </div>
     </div>
+
+    <!--     6) Implementa la sezione "Offerta del giorno". Qui avrai:
+
+66% dello spazio dedicato all'immagine del luogo di destinazione
+33% dedicato al nome, date, prezzo e un badge con "best offer" come testo
+
+l'immagine avrà i bordi arrotondati e un'ombra leggera
+per il contenuto: il nome dovrà essere più grande del resto,
+le date dovranno essere formattate con font "monospace",
+il prezzo dovrà essere definito come "lead"
+e il badge sarà scuro -->
+
+    <div class="container mt-5 d-none d-sm-block">
+      <h3 class="fw-bold fs-4 text-start mb-4">Offerta del giorno</h3>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img
+              src="https://st.ilfattoquotidiano.it/wp-content/uploads/2021/11/17/maldive-690x362.jpg"
+              class="img-fluid rounded-start"
+              alt=""
+            />
+          </div>
+          <div class="col-md-2">
+            <div class="card-body mx-2">
+              <h5 class="card-title fs-1">Maldive</h5>
+              <p class="card-text">Mete per tutte le tasche, mare cristallino e spiagge da sogno</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <span class="badge text-bg-dark">Best offer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--     9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
+
+10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
+Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra
+
+11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci". -->
+
+    <div class="container">
+      <h3 class="fw-bold fs-4 text-start mb-4 mt-5">Last minute</h3>
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg mb-4">
+          <div class="card shadow border-0">
+            <img
+              src="https://www.quotidiano.net/itinerari/wp-content/uploads/sites/2/2023/01/ecco-perche-polignano-a-mare-e-la-meta-piu-accogliente-del-mondo.jpg"
+              class="card-img"
+              alt="maldives"
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg mb-4">
+          <div class="card shadow border-0">
+            <img
+              src="https://www.quotidiano.net/itinerari/wp-content/uploads/sites/2/2023/01/ecco-perche-polignano-a-mare-e-la-meta-piu-accogliente-del-mondo.jpg"
+              class="card-img"
+              alt="maldives"
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg mb-4">
+          <div class="card shadow border-0">
+            <img
+              src="https://www.quotidiano.net/itinerari/wp-content/uploads/sites/2/2023/01/ecco-perche-polignano-a-mare-e-la-meta-piu-accogliente-del-mondo.jpg"
+              class="card-img"
+              alt="maldives"
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg mb-4">
+          <div class="card shadow border-0">
+            <img
+              src="https://www.quotidiano.net/itinerari/wp-content/uploads/sites/2/2023/01/ecco-perche-polignano-a-mare-e-la-meta-piu-accogliente-del-mondo.jpg"
+              class="card-img"
+              alt="maldives"
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg mb-4">
+          <div class="card shadow border-0">
+            <img
+              src="https://www.quotidiano.net/itinerari/wp-content/uploads/sites/2/2023/01/ecco-perche-polignano-a-mare-e-la-meta-piu-accogliente-del-mondo.jpg"
+              class="card-img"
+              alt="maldives"
+            />
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg mb-4">
+          <div class="card shadow border-0">
+            <img
+              src="https://www.quotidiano.net/itinerari/wp-content/uploads/sites/2/2023/01/ecco-perche-polignano-a-mare-e-la-meta-piu-accogliente-del-mondo.jpg"
+              class="card-img"
+              alt="maldives"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="container-fluid bg-dark text-light d-flex flex-column justify-content-center align-items-center py-5 mt-3"
+    >
+      <button type="button" class="btn btn-outline-secondary mb-4">Contattaci</button>
+
+      <span>© 2024 Lorem Ipsum -travel-agency.All Rights Reserved.</span>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
